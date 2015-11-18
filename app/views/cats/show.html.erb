@@ -1,6 +1,23 @@
 
-<ul>
-  <% @cat.attributes.each do |attribute, value| %>
-    <li><%= attribute %> = <%= value %></li>
+<table>
+  <% @attributes.each do |attribute, value| %>
+    <tr><td><%= attribute %></td><td><%= value %></td></tr>
   <% end %>
-</ul>
+
+</table>
+
+<table>
+  <th>
+    request
+  </th>
+  <th>
+    start_date
+  </th>
+  <th>
+    end_date
+  </th>
+  <% @requests.each do |request| %>
+    <tr><td><%= request.id %></td><td><%= request.start_date %></td><td> <%= request.end_date%> </td></tr>
+  <% end %>
+
+</table>

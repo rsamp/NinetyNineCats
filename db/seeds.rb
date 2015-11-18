@@ -11,3 +11,10 @@ cat = Cat.create!(birth_date: "15-09-2012", color: "pink", name: "Cuddles", sex:
 cat = Cat.create(birth_date: "06-12-2012", color: "red", name: "Squiggly", sex: "F", description: "cuttlefish")
 cat = Cat.create(birth_date: "07-11-2012", color: "green", name: "Alien", sex: "F", description: "Green Eggs and Ham")
 cat = Cat.create!(birth_date: "15-09-2012", color: "purple", name: "Breakfast", sex: "M", description: "exotic")
+
+
+CatRentalRequest.create!(cat_id: 1, start_date: '01-01-2015', end_date: '02-02-2015', status: "APPROVED")
+CatRentalRequest.create!(cat_id: 2, start_date: '01-01-2015', end_date: '02-02-2015', status: "APPROVED")
+CatRentalRequest.create!(cat_id: 3, start_date: '01-01-2015', end_date: '02-02-2015', status: "APPROVED")
+CatRentalRequest.create!(cat_id: 4, start_date: '01-01-2015', end_date: '02-02-2015', status: "APPROVED")
+CatRentalRequest.create!(cat_id: 5, start_date: '01-01-2015', end_date: '02-02-2015', status: "APPROVED")
