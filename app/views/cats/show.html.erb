@@ -7,17 +7,15 @@
 </table>
 
 <table>
-  <th>
-    request
-  </th>
-  <th>
-    start_date
-  </th>
-  <th>
-    end_date
-  </th>
+  <th>request</th><th>start_date</th><th>end_date</th>
   <% @requests.each do |request| %>
-    <tr><td><%= request.id %></td><td><%= request.start_date %></td><td> <%= request.end_date%> </td></tr>
+    <tr><td><%= request.id %></td><td><%= request.start_date %></td><td><%= request.end_date%></td>
+      <% if request.status == "PENDING" %>
+      <!-- <%= button_to "" %> -->
+        <td><input type="button" name="name" value="Approve"></td>
+        <td><input type="button" name="name" value="Deny"></td>
+      <% end %>
+    </tr>
   <% end %>
 
 </table>
